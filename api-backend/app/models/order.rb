@@ -1,3 +1,7 @@
 class Order < ApplicationRecord
-  belongs_to :user
+    # associations
+    belongs_to :user
+    
+    # validations
+    validates_presence_of :device, :yearly_price, :imei
 end
